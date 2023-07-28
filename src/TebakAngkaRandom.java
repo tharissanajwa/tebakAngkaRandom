@@ -44,5 +44,7 @@ public class TebakAngkaRandom {
         // menampilkan pesan terima kasih setelah permainan selesai
         System.out.println("");
         System.out.println("Terima kasih telah bermain. Sampai jumpa!");
+
+        scanner.close(); // untuk menutup scanner
     }
 }
