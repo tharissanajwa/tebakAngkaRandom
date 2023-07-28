@@ -30,6 +30,8 @@ public class TebakAngkaRandom {
             if (System.currentTimeMillis() > batasWaktu) {
                 System.out.println("Maaf, anda sudah melebihi tenggat waktu. Tebakan yang benar adalah " + angkaTebakan);
                 break;
+            } else if ((tebak <= 0) || (tebak >= 100)) {
+                System.out.println("Maaf, tebakan harus berupa angka 1-100!");
             } else if (tebak > angkaTebakan) { // memeriksa jika tebakan terlalu tinggi akan menampilkan pesan kesalahan
                 System.out.println("Maaf, tebakan Anda terlalu tinggi");
             } else if (tebak < angkaTebakan) { // memeriksa jika tebakan terlalu rendah akan menampilkan pesan kesalahan
